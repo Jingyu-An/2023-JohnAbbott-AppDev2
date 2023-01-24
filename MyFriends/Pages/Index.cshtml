@@ -4,7 +4,16 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@foreach (var friend in Model.Friends)
+{
+    <div class="row">
+        <div class="col-sm-4">
+            <span>Name: </span><span>@friend.Name</span>
+            <span>Age: </span><span>@friend.Age</span>
+            <a class="btn btn-danger order-button" asp-page="/view" asp-route-id="@friend.Id" title="View">View</a>
+        </div>
+    </div>
+}
+<div id="callToAction">
+    <a class="btn btn-danger order-button" asp-page="/add" title="Add">Add</a>
 </div>

@@ -15,6 +15,6 @@ public class FriendContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration(new FriendConfiguration());
+        modelBuilder.ApplyConfiguration(new FriendConfiguration()).Seed();
     }
 }

@@ -2,18 +2,22 @@
 @model MyFriends.Pages.View
 
 @{
-    Layout = null;
+    ViewData["Title"] = "View";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
 <div>
-    
+
+    <ul class="orderPageList">
+        <li>
+            <div class="form-group">
+                <label asp-for="Friend.Name"></label>
+                <span>: @Model.Friend.Name</span>
+            </div>
+        </li>
+        <li>
+            <div class="form-group">
+                <label asp-for="Friend.Age"></label>
+                <span>: @Model.Friend.Age</span>
+            </div>
+        </li>
+    </ul>
 </div>
-</body>
-</html>

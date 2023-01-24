@@ -2,18 +2,27 @@
 @model MyFriends.Pages.Add
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Add Friend";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
-</div>
-</body>
-</html>
+<form method="post">
+    <div>
+        <ul class="orderPageList" data-role="listview">
+            <li>
+                <div class="form-group">
+                    <label asp-for="NewFriend.Name"></label>
+                    <input asp-for="NewFriend.Name" class="form-control form-control-sm"/>
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label asp-for="NewFriend.Age"></label>
+                    <input asp-for="NewFriend.Age" class="form-control form-control-sm"/>
+                </div>
+            </li>
+        </ul>
+        <p class="actions">
+            <input type="hidden" asp-for="NewFriend"/>
+            <button type="submit" class="btn btn-danger order-button">Add</button>
+        </p>
+    </div>
+</form>
