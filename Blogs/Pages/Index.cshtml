@@ -1,0 +1,21 @@
+﻿@page
+@using Blog.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div>
+    <p style="text-align: end">
+        <span><a asp-page="/ArticleAdd" title="Register">Register</a></span>
+        to post articles and comments
+    </p>
+</div>
+<h1>Welcome to my blog, read on!</h1>
+@foreach (var article in Model.Articles)
+{
+    <div>
+        <a asp-page="/ArticleView" asp-route-id="@article.Id" title="Article">@article.Title</a>
+        <p>Posted by USER on @article.Timestamp</p>
+        <p>@article.Body</p>
+    </div>
+}

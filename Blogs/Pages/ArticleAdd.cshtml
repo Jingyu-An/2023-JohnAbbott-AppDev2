@@ -1,0 +1,33 @@
+@page
+@model Blog.Pages.ArticleAdd
+
+@{
+    ViewData["Title"] = "Article Add";
+}
+<div style="text-align: center">
+    <h1>Create new article</h1>
+    <form method="post">
+        <table style="margin: 0 auto">
+            <tr>
+                <td style="padding: 20px">Title</td>
+                <td style="width: 500px">
+                    <input asp-for="NewArticle.Title" class="form-control form-control-sm"/>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">Content</td>
+                <td>
+                    <textarea asp-for="NewArticle.Body" class="form-control form-control-sm" style="height: 400px"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="hidden" asp-for="NewArticle"/>
+                    <button type="submit" class="btn btn-danger order-button">Create</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
