@@ -32,6 +32,16 @@ builder.Services.Configure<IdentityOptions>(options =>
     // allow users with EmailConfirmed value 0/false to log in
     options.SignIn.RequireConfirmedAccount = false;
 });
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    // Cookie settings
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/AccessDenied";
+    options.SlidingExpiration = true;
+});
 
 var app = builder.Build();
 

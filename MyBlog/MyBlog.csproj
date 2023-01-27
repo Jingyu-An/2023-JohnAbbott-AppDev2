@@ -15,4 +15,17 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Account\LoginSuccess.cshtml" />
+      <_ContentIncludedByDefault Remove="Account\Logout.cshtml" />
+      <_ContentIncludedByDefault Remove="Account\Profile.cshtml" />
+      <_ContentIncludedByDefault Remove="Account\Register.cshtml" />
+      <_ContentIncludedByDefault Remove="Account\RegisterSuccess.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages\Admin" />
+    </ItemGroup>
+
 </Project>
