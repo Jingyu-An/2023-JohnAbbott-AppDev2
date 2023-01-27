@@ -10,7 +10,7 @@ namespace MyBlog.Pages
         private readonly SignInManager<IdentityUser> signInManager;
         private readonly ILogger<Register> logger;
 
-        public LoginModel(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager,
+        public LoginModel(SignInManager<IdentityUser> signInManager,
             ILogger<Register> logger)
         {
             this.signInManager = signInManager;
