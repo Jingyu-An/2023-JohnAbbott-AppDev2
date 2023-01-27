@@ -6,6 +6,5 @@ public class ArticleAdd : PageModel
 {
     public void OnGet()
     {
-        
     }
 }

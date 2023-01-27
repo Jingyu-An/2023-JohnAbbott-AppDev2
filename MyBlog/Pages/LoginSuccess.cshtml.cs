@@ -3,10 +3,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyBlog.Pages
 {
-    public class RegisterSuccessModel : PageModel
+    public class LoginSuccessModel : PageModel
     {
-        [BindProperty]
-        public string Email { get; set; }
         public void OnGet()
         {
         }
