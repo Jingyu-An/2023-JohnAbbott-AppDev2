@@ -11,12 +11,11 @@ public class Register : PageModel
     private readonly SignInManager<IdentityUser> signInManager;
     private readonly ILogger<Register> logger;
 
-    [BindProperty] 
-    public InputModel Input { get; set; }
+    [BindProperty] public InputModel Input { get; set; }
 
     public string ReturnUrl { get; set; }
-    
-    public Register(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager ,
+
+    public Register(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager,
         ILogger<Register> logger)
     {
         this.userManager = userManager;
@@ -52,19 +51,27 @@ public class Register : PageModel
     {
         if (ModelState.IsValid)
         {
-            var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+            var user = new IdentityUser { UserName = Input.Email, Email = Input.Email, EmailConfirmed = true };
             var result = await userManager.CreateAsync(user, Input.Password);
             if (result.Succeeded)
             {
                 // signInManager.SignInAsync(user, isPersistent: false);
-                logger.LogInformation($"User {Input.Email} create a new account with password.");
-                return RedirectToPage("RegisterSuccess", new { email = Input.Email });
+                var roleResult = userManager.AddToRoleAsync(user, "User").Result;
+                if (roleResult.Succeeded)
+                {
+                    logger.LogInformation($"User {Input.Email} create a new account with password.");
+                    return RedirectToPage("RegisterSuccess", new { email = Input.Email });
+                }
+                // FIXME : delete the user since role assignment failed, log the event, show error to the user
             }
+
             foreach (var error in result.Errors)
             {
+                // FIXME : error may be returned by this call - log it
                 ModelState.AddModelError(string.Empty, error.Description);
             }
         }
+
         return Page();
     }
 }

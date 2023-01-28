@@ -6,7 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<BlogDbContext>();
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+        options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<BlogDbContext>();
 
 builder.Services.Configure<IdentityOptions>(options =>
@@ -51,6 +53,45 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
+
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    string[] roleNamesList = new string[] { "User", "Admin" };
+
+    foreach (var roleName in roleNamesList)
+    {
+        if (!roleManager.RoleExistsAsync(roleName).Result)
+        {
+            IdentityRole role = new IdentityRole();
+            role.Name = roleName;
+            IdentityResult result = roleManager.CreateAsync(role).Result;
+            // WARNING: we ignore any errors that Create may return, they should be AT LEAST logged
+            // foreach (var error in result.Errors)
+            // TODO: Log it
+        }
+    }
+
+    string adminEmail = "admin@admin.com";
+    string adminPass = "Admin123!";
+    if (userManager.FindByNameAsync(adminEmail).Result == null)
+    {
+        IdentityUser user = new IdentityUser();
+        user.UserName = adminEmail;
+        user.Email = adminEmail;
+        user.EmailConfirmed = true;
+        IdentityResult result = userManager.CreateAsync(user, adminPass).Result;
+
+        if (result.Succeeded)
+        {
+            var result2 = userManager.AddToRoleAsync(user, "Admin").Result;
+            // if (!result2.Succeeded)
+            // FIXME: log the error
+        }
+        //FIXME: log the error
+    }
 }
 
 app.UseHttpsRedirection();
