@@ -30,4 +30,8 @@
       <Folder Include="Pages\Admin" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\Uploads\aaaa.jpg" />
+    </ItemGroup>
+
 </Project>
