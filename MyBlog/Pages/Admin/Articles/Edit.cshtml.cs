@@ -12,7 +12,7 @@ using MyBlog.Models;
 
 namespace MyBlog.Pages.Admin.Articles
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin, User")]
     public class EditModel : PageModel
     {
         private readonly BlogDbContext _context;

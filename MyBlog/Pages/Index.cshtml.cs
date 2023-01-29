@@ -1,18 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using MyBlog.Data;
+using MyBlog.Models;
 
 namespace MyBlog.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly BlogDbContext _context;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public IndexModel(BlogDbContext context)
     {
-        _logger = logger;
+        _context = context;
     }
 
-    public void OnGet()
+    public IList<Article> Article { get; set; } = default!;
+
+    public async Task OnGetAsync()
     {
+        if (_context.Articles != null)
+        {
+            Article = await _context.Articles.Include("Author").ToListAsync();
+        }
     }
 }
