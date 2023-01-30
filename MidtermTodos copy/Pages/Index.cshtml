@@ -1,0 +1,56 @@
+﻿@page
+@using Microsoft.AspNetCore.Razor.Language
+@using Microsoft.CodeAnalysis.Elfie.Model.Map
+@model IndexModel
+
+@{
+    ViewData["Title"] = "List Todos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="/Todos/TodoAdd" class="btn btn-outline-primary">Add New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Todo[0].Task)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Todo[0].DueDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Todo[0].IsDone)
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Todo)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Task)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDone)
+            </td>
+            <td>
+                @if (User.Identity.Name == item.Owner.UserName)
+                {
+                    <a asp-page="/Todos/TodoUpdate" class="btn btn-primary" asp-route-id="@item.Id">Update</a>
+                    <a asp-page="/Todos/TodoDelete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
+                }
+                <a asp-page="/Todos/TodoDetails" class="btn btn-info" asp-route-id="@item.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
