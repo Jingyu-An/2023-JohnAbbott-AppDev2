@@ -6,136 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d592f736-b5de-4ad6-9e38-40692b8bc984" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/dataSources/77977cf5-5c09-4e6f-91b6-d645366b662d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/.idea/.idea.MidtermTodos/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Data/Migrations/20230130161157_CreateDatabase.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Data/Migrations/20230130161157_CreateDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Data/Migrations/TodoDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Data/TodoDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/MidtermTodos.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/MidtermTodos.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Models/Todo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Login.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Logout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Logout.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Account/Register.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Privacy.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoAdd.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoAdd.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoAddSuccess.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoAddSuccess.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDelete.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDelete.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDeleteSuccess.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDeleteSuccess.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDetails.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoDetails.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoUpdate.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoUpdate.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoUpdateSuccess.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/Todos/TodoUpdateSuccess.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/01-Registration Fail01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/02-Registration Fail02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/03-Login Fail01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/04-Login Fail02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/05-Todo List.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/06-Add Fail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/07-Update Fail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/08-Delete Confirmation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/09-Add Flash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/10-Update Flash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/11-Delete Flash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Todo.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Todo.sqlite-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/Todo.sqlite-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos copy/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermTodos.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MidtermTodos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MidtermTodos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Todos/TodoUpdate.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Todos/TodoUpdate.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo.sqlite-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.sqlite-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo.sqlite-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.sqlite-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/07-Update Fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermTodos copy/Screenshots/07-Update Fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MidtermTodos.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermTodos.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675091006071</updated>
-      <workItem from="1675091007982" duration="15070000" />
+      <workItem from="1675091007982" duration="15390000" />
     </task>
     <servers />
   </component>
